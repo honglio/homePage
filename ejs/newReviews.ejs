@@ -1,0 +1,24 @@
+<% newReviews.forEach(function(review){%>
+	<div class='review-box'>
+		<div class="wrapper">
+			<div class='row no-gutter'>
+			    <div class='col-8'>
+				    <div class='user clearfix'>
+					    <img src='<%= review.profileImg %>' width='50' height='50' alt='Blank image'>
+					    <div class='name'><%= review.username %></div>
+				    	<div class='rep-point'>Reps <%= review.repPoints %></div>
+			    	</div>
+			    </div>
+			    <div class='vote col-4'>
+				    <div class='useful'>useful <%= review.useful %></div>
+				    <div class='unuseful'>not useful <%= review.notuseful %></div>
+				</div>
+			</div>
+			<div class='review'>
+			    <div class='title'><%= review.companyName %></div>
+			    <div class='date'>Posted at <%= review.date %></div>
+			    <div class='text block-with-text'><%= review.content %></div>
+		    </div>
+		</div>
+	</div>
+<%}) %>

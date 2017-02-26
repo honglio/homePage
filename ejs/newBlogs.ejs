@@ -1,0 +1,19 @@
+<div class="row no-gutter">
+<% newBlogs.forEach(function(blog){%>
+	<div class='col-3'>
+        	<div class='blog'>
+        		<img src='<%= blog.img %>' alt=''>
+        		<div class='row no-gutter'>
+        			<div class='col-8'>
+        				<div class='date'>Posted at <%= blog.date %></div>
+        			</div>
+        			<div class='col-4'>
+        				<div class='views'><%= blog.views %> views</div>
+        			</div>
+        		</div>
+        		<div class='title'><%= blog.title %></div>
+        		<div class='content'><%= blog.content %></div>
+        	</div>
+        </div>
+<%}) %>
+</div>

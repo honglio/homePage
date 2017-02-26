@@ -1,0 +1,31 @@
+<div id="carousel" class="carousel">
+<% newBusinesses.forEach(function(business, index) { %>
+	
+	<%if (index == 0) { %>
+		<input id="carousel-<%= index + 1 %>" class="carousel-active" type="radio" name="carousel" aria-hidden="true" hidden checked>
+	<% } else { %>
+		<input id="carousel-<%= index + 1 %>" class="carousel-active" type="radio" name="carousel" aria-hidden="true" hidden>
+	<% } %>
+	<div class='carousel-item'>
+		<div class="business-box">
+			<div class="name"> <%= business.companyName %> </div>
+			<div class="number">Reviews <%= business.reviewsNum %> </div>
+			<div class="number">Upvotes <%= business.upvotesNum %> </div>
+			<div class="number">Downvotes <%= business.downvotesNum %> </div>
+		</div>
+	</div>
+<% }) %>
+	<ol class='carousel-indicators' aria-label='Carousel navigation' aria-hidden='true'>
+	<% newBusinesses.forEach(function(business, index) { %>
+		<li>
+			<label for='carousel-<%= index + 1 %>' class='carousel-indicator'>●</label>
+		</li>
+	<% }) %>
+	</ol>
+</div>
+
+<div class='btn-container clearfix'>
+	<a class='businessBtn'>Add a Business</a>
+    <a class='businessBtn'>Review a Business</a>
+    <a class='businessBtn'>Advertise a Business</a>
+</div>

@@ -1,0 +1,100 @@
+.br-theme-bars-movie .br-widget {
+  height: 10px;
+  white-space: nowrap;
+}
+.br-theme-bars-movie .br-widget a {
+  display: block;
+  width: 50px;
+  height: 12px;
+  float: left;
+  background-color: #bbb;
+  margin: 1px;
+}
+
+.br-theme-bars-movie .br-widget a.width-1x {
+  width: 63px;
+}
+.br-theme-bars-movie .br-widget a.width-2x {
+  width: 84.6666px;
+}
+.br-theme-bars-movie .br-widget a.width-4x {
+  width: 128px;
+}
+
+.br-theme-bars-movie .br-widget a.br-active.br-1star,
+.br-theme-bars-movie .br-widget a.br-selected.br-1star {
+  background-color: #e51c23;
+}
+
+.br-theme-bars-movie .br-widget a.br-active.br-2star,
+.br-theme-bars-movie .br-widget a.br-selected.br-2star {
+  background-color: #ff5722;
+}
+
+.br-theme-bars-movie .br-widget a.br-active.br-3star,
+.br-theme-bars-movie .br-widget a.br-selected.br-3star {
+  background-color: #8E6771;
+}
+
+.br-theme-bars-movie .br-widget a.br-active.br-4star,
+.br-theme-bars-movie .br-widget a.br-selected.br-4star {
+  background-color: #9ccc65;
+}
+
+.br-theme-bars-movie .br-widget a.br-active.br-5star,
+.br-theme-bars-movie .br-widget a.br-selected.br-5star {
+  background-color: #2baf2b;
+}
+
+.br-theme-bars-movie .br-widget .br-current-rating {
+  clear: both;
+  width: 240px;
+  text-align: center;
+  font-weight: 600;
+  display: block;
+  padding: .5em 0;
+  font-weight: 400;
+}
+.br-theme-bars-movie .br-widget .br-current-rating.br-1star {
+  color: #e51c23;
+}
+.br-theme-bars-movie .br-widget .br-current-rating.br-2star {
+  color: #ff5722;
+}
+.br-theme-bars-movie .br-widget .br-current-rating.br-3star {
+  color: #8E6771;
+}
+.br-theme-bars-movie .br-widget .br-current-rating.br-4star {
+  color: #9ccc65;
+}
+.br-theme-bars-movie .br-widget .br-current-rating.br-5star {
+  color: #2baf2b;
+}
+
+.br-theme-bars-movie .br-readonly a {
+  cursor: default;
+}
+.br-theme-bars-movie .br-readonly a.br-active,
+.br-theme-bars-movie .br-readonly a.br-selected {
+  background-color: #729bf8;
+}
+.br-theme-bars-movie .br-readonly .br-current-rating {
+  color: #729bf8;
+}
+@media print {
+  .br-theme-bars-movie .br-widget a {
+    border: 1px solid #b3b3b3;
+    background: white;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .br-theme-bars-movie .br-widget a.br-active,
+  .br-theme-bars-movie .br-widget a.br-selected {
+    border: 1px solid black;
+    background: white;
+  }
+  .br-theme-bars-movie .br-widget .br-current-rating {
+    color: black;
+  }
+}

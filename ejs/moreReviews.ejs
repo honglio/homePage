@@ -1,0 +1,37 @@
+<div class="row">
+    <% newReviews.forEach(function (review) { %>
+        <div class="col-6 col-md-12 m-b-sm">
+            <div class="review">
+                <div class="user">
+                    <div class="vcenter">
+                        <img src="<%= review.profileImg %>" width="50" height="50" alt="User Image">
+                        <div class="vcenter">
+                            <div class="text-white text-md"><span class="text-sm text-gray">By  </span><%= review.username %></div>
+                            <div class="text-gray">
+                                <span>Rep points </span><%= review.repPoints %></div>
+                        </div>
+                    </div>
+                    <div class="vcenter">
+                        <div class="right">
+                            <div class="text-gray"><%= review.date %></div>
+                            <div class="text-gray"><%= review.time %></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="wrapper padder-b-xs">
+                        <div class="h5 padder-b-sm"><%= review.companyName %></div>
+                        <div class="title text-info h6 m-b-xs">"<%= review.title %>"</div>
+                        <div class="stars" id="<%= review.serialNum %>"></div>
+                        <div class="content text-muted text-block"><%= review.content %></div>
+                    </div>
+                    <div class="clearfix padder-b-sm">
+                        <div class="left"><span class="text-useful">Useful <%= review.useful %></span>  <span class="text-warning">Not useful <%= review.notuseful %></span></div>
+                    </div>
+                    <footer class="text-center padder-b-sm padder-t-xs"><a href=""><span class="text-primary">make your review for <%= review.companyName %></span></a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    <%}) %>
+</div>

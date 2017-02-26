@@ -1,0 +1,12 @@
+<div class="row no-gutter">
+<% newBusinesses.forEach(function(business) { %>
+	<div class="col-4">
+		<div class="business-box">
+			<div class="name"> <%= business.companyName %> </div>
+			<div class="number">Reviews <%= business.reviewsNum %> </div>
+			<div class="number">Upvotes <%= business.upvotesNum %> </div>
+			<div class="number">Downvotes <%= business.downvotesNum %> </div>
+		</div>
+	</div>
+<% }) %>
+</div>

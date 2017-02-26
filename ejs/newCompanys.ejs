@@ -1,0 +1,21 @@
+<% newCompanys.forEach(function(company){%>
+    <div class="col-6 col-lg-4 col-md-6 col-sm-12 m-b-md animated fadeInDown">
+        <div class="company row no-gutter">
+            <div class="col-6 col-lg-12">
+                <img src="<%= company.screenshot %>" alt="Screen Shot">
+            </div>
+            <div class="col-6 col-lg-12">
+                <div class="padder-l-sm">
+                    <h5 class="m-l-sm text-info"><%= company.companyName %></h5>
+                    <div class="subtitle">
+                        <div class="m-r-sm" id="<%= company.serialNum %>"></div>
+                        <div class="text-info m-t-xs"><%= company.reviewsNum %> Reviews</div>
+                    </div>
+                    <% company.specifics.forEach(function(specific){%>
+                        <div class="text-info padder-l-sm padder-b-sm"><%= specific.name %> : <%= specific.average %> %</div>
+                    <%}) %>
+                </div>
+            </div>
+        </div>
+    </div>
+<%}) %>
